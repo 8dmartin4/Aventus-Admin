@@ -7,12 +7,12 @@ import { tokens } from '../../theme';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
-import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
 import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
+import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 
@@ -149,14 +149,7 @@ const Sidebar = () => {
 							selected={selected}
 							setSelected={setSelected}
 						/>
-						<Item 
-							title='Invoices Balances'
-							to='/invoices'
-							icon={<ReceiptOutlinedIcon/>}
-							selected={selected}
-							setSelected={setSelected}
-						/>
-
+						
 						<Typography
 							variant='h6'
 							color={colors.gray[300]}
@@ -206,6 +199,13 @@ const Sidebar = () => {
 							title='Pie Chart'
 							to='/pie'
 							icon={<PieChartOutlinedIcon/>}
+							selected={selected}
+							setSelected={setSelected}
+						/>
+						<Item 
+							title='Line Chart'
+							to='/line'
+							icon={<TimelineOutlinedIcon/>}
 							selected={selected}
 							setSelected={setSelected}
 						/>
